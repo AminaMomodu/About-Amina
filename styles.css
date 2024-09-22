@@ -85,3 +85,6 @@ background-color:orange;}
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;}
+
+    @media (max-width:576px) 
+    {img {display:none;}}
