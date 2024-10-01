@@ -1,15 +1,26 @@
 :root {
   --primary-color: #9e2cca;
-  --secondary-color: #7e798b;
+  --secondary-color: #f3f1f8;
+  --hero-color:#f5e7e7;
   --box-shadow: 0 5px 10px #0000004d;
+   --heading-font-family: "Playfair Display", system-ui;
+  --default-font-family: "Poppins", system-ui;
     }
 
-body {background: linear-gradient(#f1e0e0, #f1ba9a);    
+body {background: var(--secondary-color);    
+font-family: var(--default-font-family);
 }
-
+.hero {
+  background: var(--hero-color);
+  text-align: center;
+  padding: 50px 10px;
+}
 h1,
 h2,
 h3 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
   text-align: center;
   margin: 0;
 }
@@ -50,16 +61,18 @@ h3 {
 .both-paragraphs{
 display: flex;
 }
+
 p{display:flex
   justify-content: space-around; 
   padding: 10px;
-  border:1px solid brown;
+  border: 1px solid brown;
   margin: 10px;
   font-size: 18px;
 line-height: 1.5;
 text-align:center;
-  flex:1,;
-background-color:orange;}
+  flex: 1;
+background-color:orange;
+}
   
   .contact-me {
       display: flex;
@@ -86,5 +99,6 @@ background-color:orange;}
     box-shadow: var(--box-shadow);
     color: white;}
 
-    @media (max-width:576px) 
-    {img {display:none;}}
+    @media (max-width:600px) 
+    {img {display:none;}
+    }
