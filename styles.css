@@ -63,7 +63,7 @@ h3 {
 }
 
 p {
-  display: flex;
+  display: flex
   justify-content: space-around;
   padding: 10px;
   border: 1px solid brown;
@@ -74,6 +74,7 @@ p {
   flex: 1;
   background-color: orange;
 }
+
 .contact-me {
   display: flex;
   justify-content: center;
